@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Big Form</title>
+    <style>
+         #flex1,#flex2{
+            display: flex;
+        }
+        
+        .input1 {
+            width: 400px;
+            margin-left: 60px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+            font-size: 13px;
+            padding:6px 0 6px 8px ;
+            background-color: white;
+            border: 1px solid #bcb8b8;
+        }
+        #outerDiv{
+            margin: 50px;
+        }
+        #input1{
+            margin-left: 25px;
+        }
+        header{
+            background-color: red;
+        }
+        p{
+            padding: 6px 0 6px 10px;
+            font-size: 15px;
+            color: whitesmoke;
+        }
+        img{
+            border: 1px solid #dfdbdb;
+        }
+        .row2{
+            flex-direction: column;
+        }
+        .part2{
+            width: 348px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+            margin-right:33px;
+            font-size: 13px;
+            padding:6px 0 6px 8px ;
+            background-color: white;
+            border: 1px solid #bcb8b8;
+        }
+        #part2{
+            width: 358px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outerDiv">
+        <header>
+            <p><strong>!</strong> All fields mandatory. Please enter <strong>NA</strong> where not applicable.</p>
+        </header>
+        <div id="flex1">
+            <div class="row">
+            <img src="Images/Profile Photo.jpg" alt="Proile_Pic" width="230px" height="190px">
+            </div>
+            <div class="row">
+                <input class="input1" type="text" placeholder="TBMSJAFREG56916">
+                <select name="" class="input1">
+                    <option value="0">Select Post Applied For</option>
+                    <option value="Teaching">Teaching</option>
+                    <option value="Non Teaching">Non Teaching</option>
+                </select>
+                <input class="input1" type="text" placeholder="*FULL NAME(AS PER PAN CARD)">
+            </div>
+            <div class="row">
+                <input class="input1" id="input1" type="text" placeholder="17-07-2023">
+                <input class="input1" id="input1" type="text" placeholder="PREFERRED SUBJECTS">
+                <input class="input1" id="input1" type="text" placeholder="*PARENTAGE">
+            </div>
+        </div>
+        <div id="flex2">
+            <div class="row2">
+                <input class="part2" type="text" name="birth" placeholder="*DATE OF BIRTH (AS PER 10TH CLASS CERTIFICATE)">
+                <select id="part2" class="part2" name="religion">
+                    <option value="Islam">Islam</option>
+                    <option value="Hinduism">Hinduism</option>
+                    <option value="Christianity">Christianity</option>
+                    <option value="Buddism">Buddism</option>
+                    <option value="Jainism">Jainism</option>
+                </select>
+                <select id="part2" class="part2" name="State" disabled>
+                    <option value="Slect State" >Select State</option>
+                </select>
+                <input class="part2" type="text" name="landmark" placeholder="*LAND MARK">
+                <input class="part2" type="text" name="pincode" placeholder="*PIN CODE">
+            </div>
+            <div class="row2">
+                <input class="part2" type="text" name="present_age" placeholder="*PRESENT AGE">
+                <select id="part2" class="part2" name="maritalStatus">
+                    <option value="0">Select Marital Status</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Unmarried">Unmarried</option>
+                </select>
+                <select id="part2" class="part2" name="city" disabled>
+                    <option value="0">Select City</option>
+                </select>
+                <input class="part2" type="text" name="landmark" placeholder="*LAND MARK">
+                <input class="part2" type="email" name="email" placeholder="*EMAIL">
+            </div>
+            <div class="row2">
+                <select id="part2" class="part2" name="gender">
+                    <option value="0">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <select id="part2" class="part2" name="country">
+                    <option value="0">Select Country</option>
+                    <option value="India">India</option>
+                </select>
+                <input class="part2" type="text" name="colony" placeholder="*MOHALLA/COLONY">
+                <input class="part2" type="text" name="houseNo" placeholder="*HOUSE NO">
+                <input class="part2" type="number" name="phone" placeholder="*PHONE">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
